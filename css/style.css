@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(to right, #fff5f5, #fde4e4);
+    color: #4b0000;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.navbar {
+    background-color: #fff0f0 !important;
+    border-top: 4px solid #b30000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #b30000, #ff9999);
+    z-index: 1;
+}
+.navbar-brand {
+    letter-spacing: 3px !important;
+}
+
+.logo {
+    font-family: "Texturina", serif;
+    font-weight: 500;
+    font-size: 50px !important;
+}
+
+.logo span {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 500;
+    color: brown;
+    font-size: 60px;
+}
+
+.nav {
+    justify-content: center;
+    display: flex;
+}
+
+.nav a {
+    word-spacing: 2px;
+}
+
+.nav-link {
+    transition: all ease-in-out 0.3s;
+    position: relative;
+    font-size: 17px !important;
+    color: #000 !important;
+}
+
+.nav-link::before {
+    content: "";
+    height: 4px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #a94442, #e99);
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: brown !important;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+}
+
+.dropdown-menu {
+    background: linear-gradient(to right, #fff5f5, #fde4e4);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    transition: all ease-in-out 0.5s;
+    border-radius: 8px;
+    color: #800000 !important;
+    font-weight: 600;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    line-height: 35px;
+}
+
+.dropdown-item:hover {
+    background-color: #ffd6d6;
+    color: #800000 !important;
+    transform: translateX(5px);
+    font-weight: 500;
+}
