@@ -25,90 +25,78 @@
 </head>
 
 <body>
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid flex-column">
+    <a class="navbar-brand logo" href="./index.html">
+      B<span>A</span>G B<span>A</span>G.<span>.</span>.
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
 
-    <!-- Section Header Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid flex-column">
-            <a class="navbar-brand logo" href="./index.html">
-                B<span>A</span>G B<span>A</span>G.<span>.</span>.
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="nav collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.html"> About Us </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-black fw-normal" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Men
-                        </a>
-                        <ul class="dropdown-menu text-black fw-normal" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./officeBag.html">Office Bag</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./wallet.html">Wallet</a>
-                            </li>
-                            <hr class="dropdown-divider" />
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-black fw-normal" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Women
-                        </a>
-                        <ul class="dropdown-menu text-black fw-normal" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./handbag.html">Handbag</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./toteBag.html">Tote Bag</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./makeupBag.html">Makeup Bag</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./clutch.html">Clutch</a>
-                            </li>
-                            <hr class="dropdown-divider" />
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-black fw-normal" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Backpacks
-                        </a>
-                        <ul class="dropdown-menu text-black fw-normal" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./uniBackpack.html">University
-                                    Backpacks</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black fw-normal" href="./travelBackpack.html">Travel
-                                    Backpacks</a>
-                            </li>
-                            <hr class="dropdown-divider" />
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./branch.html">Our Branch</a>
-                    </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Section Header End -->
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutUs.html">About Us</a>
+        </li>
+
+        <!-- Men Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black fw-normal" href="#" id="menDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Men
+          </a>
+          <ul class="dropdown-menu text-black fw-normal" aria-labelledby="menDropdown">
+            <li><a class="dropdown-item text-black fw-normal" href="./officeBag.html">Office Bag</a></li>
+            <li><a class="dropdown-item text-black fw-normal" href="./wallet.html">Wallet</a></li>
+          </ul>
+        </li>
+
+        <!-- Women Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black fw-normal" href="#" id="womenDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Women
+          </a>
+          <ul class="dropdown-menu text-black fw-normal" aria-labelledby="womenDropdown">
+            <li><a class="dropdown-item text-black fw-normal" href="./handbag.html">Handbag</a></li>
+            <li><a class="dropdown-item text-black fw-normal" href="./toteBag.html">Tote Bag</a></li>
+            <li><a class="dropdown-item text-black fw-normal" href="./makeupBag.html">Makeup Bag</a></li>
+            <li><a class="dropdown-item text-black fw-normal" href="./clutch.html">Clutch</a></li>
+          </ul>
+        </li>
+
+        <!-- Backpacks Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black fw-normal" href="#" id="backpackDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Backpacks
+          </a>
+          <ul class="dropdown-menu text-black fw-normal" aria-labelledby="backpackDropdown">
+            <li><a class="dropdown-item text-black fw-normal" href="./uniBackpack.html">University Backpacks</a></li>
+            <li><a class="dropdown-item text-black fw-normal" href="./travelBackpack.html">Travel Backpacks</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./locations.html">Locations</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
 
  <!-- Cards  -->
     <div class="section-bg py-5">
@@ -247,7 +235,7 @@
                             <a href="./contact.html">Contact Us</a>
                         </li>
                         <li>
-                            <a href="./branch.html">Our Branch</a>
+                        <a href="./locations.html">Our Locations</a>
                         </li>
                     </ul>
                 </div>
@@ -272,6 +260,12 @@
                         <li>
                             <a href="./travelBackpack.html">Travel Backpacks</a>
                         </li>
+                        <li>
+                          <a href="./officeBag.html">Office Bags</a>
+                        </li>
+                        <li>
+                          <a href="./wallet.html">Men's Wallet</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="text-start link">
@@ -284,7 +278,8 @@
                             <a href="tel:+123 456 7890">Phone: +123 456 7890</a>
                         </li>
                         <li>
-                            <a href="#">Address:123 Maroon Street, Fashion City</a>
+                            <a href="https://www.google.com/maps?q=500+Fashion+Avenue,+New+York,+NY+10018" target="_blank">
+                              <i class="fas fa-map-marker-alt me-2"></i>Address: 500 Fashion Avenue, New York, NY 10018</a>
                         </li>
                     </ul>
                 </div>
