@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Backpack || BagBag</title>
-
+    <title>Buy Now</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -20,8 +19,7 @@
         rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -39,11 +37,11 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                        <a class="nav-link" href="../aboutUs.html">About Us</a>
                     </li>
 
                     <!-- Men Dropdown -->
@@ -53,9 +51,9 @@
                             Men
                         </a>
                         <ul class="dropdown-menu text-black fw-normal" aria-labelledby="menDropdown">
-                            <li><a class="dropdown-item text-black fw-normal" href="./officeBag.html">Office Bag</a>
+                            <li><a class="dropdown-item text-black fw-normal" href="../officeBag.html">Office Bag</a>
                             </li>
-                            <li><a class="dropdown-item text-black fw-normal" href="./wallet.html">Wallet</a></li>
+                            <li><a class="dropdown-item text-black fw-normal" href="../wallet.html">Wallet</a></li>
                         </ul>
                     </li>
 
@@ -66,11 +64,11 @@
                             Women
                         </a>
                         <ul class="dropdown-menu text-black fw-normal" aria-labelledby="womenDropdown">
-                            <li><a class="dropdown-item text-black fw-normal" href="./handbag.html">Handbag</a></li>
-                            <li><a class="dropdown-item text-black fw-normal" href="./toteBag.html">Tote Bag</a></li>
-                            <li><a class="dropdown-item text-black fw-normal" href="./makeupBag.html">Makeup Bag</a>
+                            <li><a class="dropdown-item text-black fw-normal" href="../handbag.html">Handbag</a></li>
+                            <li><a class="dropdown-item text-black fw-normal" href="../toteBag.html">Tote Bag</a></li>
+                            <li><a class="dropdown-item text-black fw-normal" href="../makeupBag.html">Makeup Bag</a>
                             </li>
-                            <li><a class="dropdown-item text-black fw-normal" href="./clutch.html">Clutch</a></li>
+                            <li><a class="dropdown-item text-black fw-normal" href="../clutch.html">Clutch</a></li>
                         </ul>
                     </li>
 
@@ -81,19 +79,19 @@
                             Backpacks
                         </a>
                         <ul class="dropdown-menu text-black fw-normal" aria-labelledby="backpackDropdown">
-                            <li><a class="dropdown-item text-black fw-normal" href="./uniBackpack.html">University
+                            <li><a class="dropdown-item text-black fw-normal" href="../uniBackpack.html">University
                                     Backpacks</a></li>
-                            <li><a class="dropdown-item text-black fw-normal" href="./travelBackpack.html">Travel
+                            <li><a class="dropdown-item text-black fw-normal" href="../travelBackpack.html">Travel
                                     Backpacks</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./locations.html">Locations</a>
+                        <a class="nav-link" href="../locations.html">Locations</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                        <a class="nav-link" href="../contact.html">Contact Us</a>
                     </li>
 
                 </ul>
@@ -102,108 +100,110 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Cards  -->
-    <div class="section-bg py-5">
+    <!-- Product Detail Page -->
+    <div class="container mt-5">
+        <div class="product-detail-container">
+            <div class="product-image">
+                <img src="../images/OfficeBags/officebag5.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Classic Office Bag</h1>
+                <p class="product-description">A classic office bag is a timeless, professional accessory designed to
+                    carry essentials like laptops, documents, and stationery in a sleek, structured format.
+
+                    Often made from leather or durable polyester, it features compartments for organization and a
+                    sophisticated look suitable for formal workplaces.</p>
+                <p class="product-price"><del>Rs.4,915.00</del> Rs.3,939.00</p>
+
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+
+                <div class="actions">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+
+                <div class="product-rating">
+                    <p>Rating: 4.5/5</p>
+                    <p>Based on 250 reviews</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cards -->
+    <section class="section-bg py-5">
         <div class="container">
-            <h2 class="mb-4 text-center">Travel Backpack</h2>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="./images/TravelBackpack/TravelBag1.jpg" class="card-img-top" alt="Classic Handbag" />
-                        <div class="card-body">
-                            <h5 class="card-title">Leather Backpack</h5>
-                            <p class="card-text">
-                                <del>Rs.3,415.00</del> Rs.2,049.00
-                            </p>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4 text-center">May You Like This?</h2>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card-content">
+                                <div class="card h-100">
+                                    <img src="../images/Homepage/Card1.webp" class="card-img-top"
+                                        alt="Classic Handbag" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Classic Handbag</h5>
+                                        <p class="card-text">
+                                            Timeless elegance crafted for the modern woman.
+                                        </p>
+                                    </div>
+                                </div>
+                                <button><a href="../handbag.html">View All</a></button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="./images/TravelBackpack/TravelBag2.jpg" class="card-img-top" alt="Leather Tote" />
-                        <div class="card-body">
-                            <h5 class="card-title"> Vintage Explorer's Backpack</h5>
-                            <p class="card-text">
-                                <del>Rs.3,825.00</del> Rs.2,295.00
-                            </p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card-content">
+                                <div class="card h-100">
+                                    <img src="../images/Homepage/Card2.jpg" class="card-img-top" alt="Leather Tote" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Leather Tote</h5>
+                                        <p class="card-text">
+                                            Tote bags are spacious, eco-friendly, and perfect for everyday
+                                            use.
+                                        </p>
+                                    </div>
+                                </div>
+                                <button><a href="../toteBag.html">View All</a></button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="/images/TravelBackpack/TravelBag3.jpg" class="card-img-top" alt="Evening Clutch" />
-                        <div class="card-body">
-                            <h5 class="card-title">Travel Bag</h5>
-                            <p class="card-text">
-                                <del>Rs.3,350.00</del> Rs.2,110.00
-                            </p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card-content">
+                                <div class="card h-100">
+                                    <img src="../images/Homepage/Card3.webp" class="card-img-top"
+                                        alt="Evening Clutch" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Evening Clutch</h5>
+                                        <p class="card-text">
+                                            Sparkle at every event with this chic companion.
+                                        </p>
+                                    </div>
+                                </div>
+                                <button><a href="../clutch.html">View All</a></button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="/images/TravelBackpack/TravelBag4.jpg" class="card-img-top" alt="Fashion Backpack" />
-                        <div class="card-body">
-                            <h5 class="card-title">Travel Outdoor Bag </h5>
-                            <p class="card-text">
-                                <del>Rs.1,915.00</del> Rs.999.00
-                            </p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card-content">
+                                <div class="card h-100">
+                                    <img src="../images/Homepage/Card4.webp" class="card-img-top"
+                                        alt="Fashion Backpack" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fashion Backpack</h5>
+                                        <p class="card-text">
+                                            Style meets functionality in this everyday go-to.
+                                        </p>
+                                    </div>
+                                </div>
+                                <button><a href="../uniBackpack.html">View All</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section-bg py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="/images/TravelBackpack/TravelBag5.jpg" class="card-img-top" alt="Classic Handbag" />
-                        <div class="card-body">
-                            <h5 class="card-title">Vintage Explorer Backpack</h5>
-                            <p class="card-text">
-                                <del>Rs.1,915.00</del> Rs.1,290.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="./images/TravelBackpack/TravelBag6.jpg" class="card-img-top" alt="Leather Tote" />
-                        <div class="card-body">
-                            <h5 class="card-title">Travel Organizer</h5>
-                            <p class="card-text">
-                                <del>Rs.3,825.00</del> Rs.2,295.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="/images/TravelBackpack/TravelBag7.jpg" class="card-img-top" alt="Evening Clutch" />
-                        <div class="card-body">
-                            <h5 class="card-title">Classical Canvas Backpack</h5>
-                            <p class="card-text">
-                                <del>Rs.2,831.00</del> Rs.1,299.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100">
-                        <img src="/images/TravelBackpack/TravelBag8.jpg" class="card-img-top" alt="Fashion Backpack" />
-                        <div class="card-body">
-                            <h5 class="card-title">Vibrant Black Backpack</h5>
-                            <p class="card-text">
-                                <del>Rs.3,831.00</del> Rs.2,299.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer Start -->
     <footer class="footer mt-5">
@@ -230,16 +230,16 @@
                     <h6><strong>Quick Link</strong></h6>
                     <ul class="m-0 p-0">
                         <li>
-                            <a href="./index.html">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a href="./aboutUs.html">About Us</a>
+                            <a href="../aboutUs.html">About Us</a>
                         </li>
                         <li>
-                            <a href="./contact.html">Contact Us</a>
+                            <a href="../contact.html">Contact Us</a>
                         </li>
                         <li>
-                            <a href="./locations.html">Our Locations</a>
+                            <a href="../locations.html">Our Locations</a>
                         </li>
                     </ul>
                 </div>
@@ -247,28 +247,28 @@
                     <h6><strong>Categories</strong></h6>
                     <ul class="m-0 p-0">
                         <li>
-                            <a href="./handbag.html">Handbags</a>
+                            <a href="../handbag.html">Handbags</a>
                         </li>
                         <li>
-                            <a href="./toteBag.html">Tote Bags</a>
+                            <a href="../toteBag.html">Tote Bags</a>
                         </li>
                         <li>
-                            <a href="./makeupBag.html">Makeup Bags</a>
+                            <a href="../makeupBag.html">Makeup Bags</a>
                         </li>
                         <li>
-                            <a href="./clutch.html">Clutches</a>
+                            <a href="../clutch.html">Clutches</a>
                         </li>
                         <li>
-                            <a href="./uniBackpack.html">University Backpacks</a>
+                            <a href="../uniBackpack.html">University Backpacks</a>
                         </li>
                         <li>
-                            <a href="./travelBackpack.html">Travel Backpacks</a>
+                            <a href="../travelBackpack.html">Travel Backpacks</a>
                         </li>
                         <li>
-                            <a href="./officeBag.html">Office Bags</a>
+                            <a href="../officeBag.html">Office Bags</a>
                         </li>
                         <li>
-                            <a href="./wallet.html">Men's Wallet</a>
+                            <a href="../wallet.html">Men's Wallet</a>
                         </li>
                     </ul>
                 </div>
@@ -295,9 +295,11 @@
     </footer>
     <!-- Footer End -->
 
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
 
 </body>
 
