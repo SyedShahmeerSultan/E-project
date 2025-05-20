@@ -515,6 +515,7 @@ li {
     padding: 30px;
     gap: 40px;
     cursor: context-menu;
+    /* background-color: #fff; */
 }
 
 /* Product Image */
