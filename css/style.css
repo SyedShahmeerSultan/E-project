@@ -635,7 +635,7 @@ li {
 }
 
 
-/* Media Querry */
+/* Media Query */
 @media screen and (max-width: 576px) {
     .carousel-caption {
         display: block !important;
@@ -662,7 +662,7 @@ li {
     }
 
     .carousel-item img {
-        height: 300px;
+        height: 300px !important;
     }
 
     .hero-background h2 {
@@ -682,4 +682,31 @@ li {
     .navbar .container-fluid {
         flex-direction: row !important;
     }
+}
+
+@media screen and (max-width: 425px) {
+
+     .hero-background {
+        padding: 20px;
+    }
+
+    .carousel-item img {
+        height: 300px !important;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .navbar .container-fluid {
+        flex-direction: row !important;
+    }
+
+    .logo span {
+        font-size: 43px !important;
+    }
+
+    .logo {
+        font-size: 35px !important;
+    }
+
 }
