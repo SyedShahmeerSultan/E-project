@@ -192,7 +192,7 @@ h6 {
     height: 40px;
     border-radius: 8px;
     background-color: #4b0000;
-    border: 1px solid #fff;
+    border: none;
     position: absolute;
     top: 45%;
     left: 8px;
@@ -592,30 +592,24 @@ li {
 
 .actions button {
     padding: 12px 25px;
-    font-size: 1rem;
-    border: none;
     cursor: pointer;
-    border-radius: 8px;
-    transition: all 0.3s ease;
     margin-right: 15px;
+    margin-top: 10px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(128, 0, 0, 0.2);
 }
 
-.actions .add-to-cart {
-    background-color: #457b9d;
-    color: white;
-}
-
-.actions .add-to-cart:hover {
-    background-color: #1d3557;
-}
-
-.actions .buy-now {
-    background-color: #e63946;
-    color: white;
-}
-
-.actions .buy-now:hover {
-    background-color: #a82834;
+.actions button:hover {
+    color: #fff;
+    background-color: #a00000;
+    box-shadow: 0 6px 15px rgba(128, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Rating Section */
@@ -637,6 +631,12 @@ li {
 
 
 /* Media Query */
+@media screen and (max-width: 768px) {
+    .navbar .container-fluid {
+        flex-direction: row !important;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .carousel-caption {
         display: block !important;
@@ -676,25 +676,25 @@ li {
     .footer h6 {
         border-bottom: none;
     }
-}
 
+    .card-content button {
+        display: block;
+        position: static;
+    }
 
-@media screen and (max-width: 768px) {
-    .navbar .container-fluid {
-        flex-direction: row !important;
+    .card-content:hover .card {
+        opacity: 1;
     }
 }
 
 @media screen and (max-width: 425px) {
-
-     .hero-background {
+    .hero-background {
         padding: 20px;
     }
 
     .carousel-item img {
         height: 300px !important;
     }
-
 }
 
 @media screen and (max-width: 375px) {
