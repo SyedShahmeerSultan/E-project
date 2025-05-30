@@ -1,42 +1,55 @@
 // Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the form and success message container
-  const form = document.querySelector("form");
+  const form = document.getElementById("contactForm");
   const formSuccess = document.getElementById("formSuccess");
 
-  // Add event listener for form submission
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default submission
 
-    // Simple form validation (you can expand this)
-    let isValid = true;
-    const formElements = form.querySelectorAll("input, textarea");
+      let isValid = true;
+      const elements = form.querySelectorAll("input, textarea");
 
-    // Loop through all form elements to check validity
-    formElements.forEach(function (element) {
-      if (!element.checkValidity()) {
+      elements.forEach(function (element) {
+        if (!element.checkValidity()) {
+          isValid = false;
+          element.classList.add("is-invalid");
+        } else {
+          element.classList.remove("is-invalid");
+        }
+      });
+
+      if (!form.checkValidity()) {
         isValid = false;
-        element.classList.add("is-invalid");
-      } else {
-        element.classList.remove("is-invalid");
+      }
+
+      form.classList.add("was-validated");
+
+      if (isValid) {
+        formSuccess.classList.remove("d-none");
+        form.reset();
+        form.classList.remove("was-validated");
       }
     });
+  }
 
-    // If form is valid, show the success message
-    if (isValid) {
-      formSuccess.classList.remove("d-none"); // Show success message
-      form.reset(); // Reset the form
-    }
-  });
+  // Handle "Add to Cart" button
+  const addToCartBtn = document.querySelector(".add-to-cart");
+  if (addToCartBtn) {
+    addToCartBtn.addEventListener("click", function () {
+      const quantity = document.querySelector("#quantity")?.value || 1;
+      alert(`Added ${quantity} item(s) to the cart.`);
+    });
+  }
+
+  // Handle "Buy Now" button
+  const buyNowBtn = document.querySelector(".buy-now");
+  if (buyNowBtn) {
+    buyNowBtn.addEventListener("click", function () {
+      const quantity = document.querySelector("#quantity")?.value || 1;
+      alert(`You are buying ${quantity} item(s) now.`);
+    });
+  }
 });
 
-// Detail Page
-document.querySelector(".add-to-cart").addEventListener("click", function () {
-  const quantity = document.querySelector("#quantity").value;
-  alert(`Added ${quantity} items to the cart.`);
-});
 
-document.querySelector(".buy-now").addEventListener("click", function () {
-  const quantity = document.querySelector("#quantity").value;
-  alert(`You are buying ${quantity} items now.`);
-});
